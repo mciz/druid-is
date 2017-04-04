@@ -1,3 +1,3 @@
 usage:
 
-oc create -f https://raw.githubusercontent.com/mciz/kafka-is/master/config-druid.yaml
+oc create -f https://raw.githubusercontent.com/mciz/druid-is/master/config-druid.yaml
