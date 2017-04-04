@@ -50,7 +50,7 @@ items:
             - -Dfile.encoding=UTF-8
             - -Ddruid.realtime.specFile=/opt/druid/config/infispectorDruid.spec
             - -classpath
-            - "/opt/druid/config/_common:/opt/druid/config/realtime:/lib/*"
+            - "/opt/druid/config/_common:/opt/druid/config/realtime:/opt/druid/lib/*"
             - io.druid.cli.Main server
             - realtime            
             volumeMounts:
