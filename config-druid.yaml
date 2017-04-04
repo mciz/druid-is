@@ -48,9 +48,9 @@ items:
             - -XX:MaxDirectMemorySize=200000000
             - -Duser.timezone=UTC
             - -Dfile.encoding=UTF-8
-            - -Ddruid.realtime.specFile=/config/infispectorDruid.spec
+            - -Ddruid.realtime.specFile=/opt/druid/config/infispectorDruid.spec
             - -classpath
-            - "/opt/druid/config/_common:/config/realtime:/lib/*"
+            - "/opt/druid/config/_common:/opt/druid/config/realtime:/lib/*"
             - io.druid.cli.Main server
             - realtime            
             volumeMounts:
