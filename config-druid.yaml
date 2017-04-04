@@ -10,7 +10,7 @@ items:
     name: druid-solo
     annotations:
       description: 1-pod Druid
-      tags: messaging, db, database, druid
+      tags: messaging, db, NoSQL, database, druid
   parameters:
   - name: NAME
     description: Name prefix for each object created
