@@ -48,13 +48,13 @@ items:
             - -XX:MaxDirectMemorySize=200000000
             - -Duser.timezone=UTC
             - -Dfile.encoding=UTF-8
-            - -Ddruid.realtime.specFile=/opt/druid/config/infispectorDruid.spec
+            - -Ddruid.realtime.specFile=/config/infispectorDruid.spec
             - -classpath
-            - "/opt/druid/config/_common:/opt/druid/config/realtime:/opt/druid/lib/*"
+            - "/opt/druid/config/_common:/config/realtime:/lib/*"
             - io.druid.cli.Main server
             - realtime            
             volumeMounts:
-            - mountPath: /druid/tmp/druid-logs
+            - mountPath: /tmp/druid-logs
               name: druid-logs
             ports:
             - containerPort: 8084        
