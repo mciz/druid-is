@@ -46,6 +46,7 @@ items:
             args:
             - -Xmx256m
             - -XX:MaxDirectMemorySize=200000000
+            - -Ddruid.zk.service.host=apache-kafka
             - -Duser.timezone=UTC
             - -Dfile.encoding=UTF-8
             - -Ddruid.realtime.specFile=/opt/druid/config/infispectorDruid.spec
