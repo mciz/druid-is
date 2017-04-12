@@ -17,4 +17,4 @@ RUN chmod -R a=u /opt/druid/
 WORKDIR /opt/druid/
 
 # 2181 is zookeeper, 9092 is kafka, 3888 is druid, 8084 is realtime druid
-EXPOSE 2181 2888 3888 9092
+EXPOSE 2181 3888 9092 8084
