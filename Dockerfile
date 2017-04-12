@@ -12,6 +12,7 @@ RUN mkdir -p /opt/druid/ \
     && yum clean all
 
 COPY infispectorDruid.spec /opt/druid/config/
+COPY sampleMessages.json /opt/druid/
 
 RUN chmod -R a=u /opt/druid/
 WORKDIR /opt/druid/

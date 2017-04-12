@@ -17,6 +17,10 @@
           }
         }
       },
+      "inputSpec": {
+        "type": "static",
+        "paths": "/opt/druid/sampleMessages.json"
+      },
       "metricsSpec" : [{
         "type" : "count",
         "name" : "count"
@@ -40,7 +44,7 @@
       "firehose": {
         "type": "kafka-0.8",
         "consumerProps": {
-          "zookeeper.connect": "0.0.0.0:2181",
+          "zookeeper.connect": "apache-kafka:2181",
           "zookeeper.connection.timeout.ms" : "15000",
           "zookeeper.session.timeout.ms" : "15000",
           "zookeeper.sync.time.ms" : "5000",
